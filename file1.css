@@ -1,0 +1,369 @@
+body{
+    /* background-image: url("images/day\ sun.gif"); */
+    /* background-image: url(images/night\ moon.gif); */
+    overflow-x: hidden; /* Hide overflow to prevent scrollbars */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+   overflow-y: auto;
+}
+
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video stays behind other content */
+}
+
+
+
+
+#nav1{
+     
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ padding: 20px;
+   
+}
+
+.outersrch{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* navbar setting */
+
+.logo img {
+    height: 70px; /* Adjust as needed */
+    width: 70px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+
+.srch {
+   
+    flex-grow: 1;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.srch input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: none;
+   border: 2px solid grey;
+    color:black;
+    font-size: 16px;
+  
+}
+
+.srch button {
+    background-color: #dacccc;
+    color: black;
+    border: 2px solid grey;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* hidden box */
+
+/* Initially hide the box */
+.hidden {
+    
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1.5s ease, transform 1.5s ease-in-out; /* Adjust the duration and timing function as needed */
+    
+}
+
+
+/* Style the box */
+#box {
+   
+    text-align: center;
+    background-color: #f0f0f0;
+    max-width: 100%;
+    width: 100%;
+    height: 1000px;
+    margin: 20px auto;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    left: 1px;
+    background-image: url("images/TGIF\ -\ \ Day\ \'n\ Night.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#box img {
+    max-width: 100%;
+}
+
+.tenor-gif-embed{
+    pointer-events: none;
+    height: 200px;
+}
+
+
+/* innerbody css */
+
+.innerbody{
+  
+   
+    width: 100%;
+    height: 580px;
+    
+   align-items: center;
+   justify-content: center;
+   
+  
+}
+
+.sticker{
+      
+    background-color: black;
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+    
+}
+
+.temperature{
+     font-size: 50px;
+  
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+
+.temperature img{
+    height: 100px;
+    width: 100px;
+}
+
+.cityname{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   font-size: 50px;
+   font-weight: 200;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;   
+    display: flex;
+}
+
+.text{
+    margin-left: 15px;
+    font-size: 70px;
+    font-weight: 300;
+    font-family: cursive;
+}
+
+.container2{
+
+    
+    width: 100%;
+    height: 150px;  
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+.humidity{
+    margin: 30px;
+    background: linear-gradient(to right,rgb(45, 90, 118),rgb(84, 124, 151),rgb(45, 90, 118));
+    
+    border-radius: 7px;
+    width: 300px;
+    height: 100px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+.humidity img{
+    height: 80px;
+    width: 80px;
+}
+
+.text2{
+
+    font-size: 30px;
+    font-weight: 400;
+
+
+}
+.wind{
+  margin: 30px;
+  background: linear-gradient(to right,rgb(45, 90, 118),rgb(84, 124, 151),rgb(45, 90, 118));
+  border-radius: 7px;
+    width: 300px;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.wind img{
+    width: 90px;
+    height: 90px;
+}
+
+.text3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/* 
+footer section */
+
+footer {
+    background-color: #4d4c4c;
+    opacity: 0.8;
+    color: #f9f9fc;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.footer-content ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for tablets */
+    .temperature {
+        font-size: 8vw;
+    }
+
+    .cityname {
+        font-size: 8vw;
+    }
+
+    .text {
+        font-size: 10vw;
+    }
+   
+    .humidity,
+    .wind {
+        margin: 5vw;
+        width: 80vw;
+    }
+
+    .humidity img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .wind img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .text2,
+    .text3 {
+        font-size: 6vw;
+    }
+
+    footer {
+        margin-top: 5vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust styles for mobile phones */
+    .temperature {
+        font-size: 12vw;
+    }
+
+    .cityname {
+        font-size: 10vw;
+    }
+
+    .text {
+        font-size: 10vw;
+    }
+
+    .humidity,
+    .wind {
+        margin: 2vw;
+        width: 50vw;
+    }
+
+    .humidity img {
+        height: 20vw;
+        width: 10vw;
+    }
+
+    .wind img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .text2,
+    .text3 {
+        font-size: 8vw;
+    }
+
+    footer {
+        margin-top: 2vw;
+    }
+}
